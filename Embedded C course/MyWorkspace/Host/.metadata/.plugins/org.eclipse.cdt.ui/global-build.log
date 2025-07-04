@@ -2,3 +2,26 @@
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 gcc -o 000TestProject.exe main.o 
+10:04:22 **** Rebuild of configuration Debug for project 000TestProject ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o 000TestProject.exe main.o 
+Info: Nothing to build for Host_AssignmentCode
+Info: Nothing to build for Sample2
+Info: Nothing to build for sample
+10:15:04 **** Incremental Build of configuration Debug for project Sample2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:21:46: warning: 'my_var' is used uninitialized in this function [-Wuninitialized]
+         /* left handside expression*/ my_var = my_var +10; // right hand side expression
+                                       ~~~~~~~^~~~~~~~~~~~
+gcc -o Sample2.exe main.o 
+10:17:31 **** Incremental Build of configuration Debug for project Sample2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:22:16: warning: 'my_var' is used uninitialized in this function [-Wuninitialized]
+         my_var = my_var +10;
+         ~~~~~~~^~~~~~~~~~~~
+gcc -o Sample2.exe main.o 

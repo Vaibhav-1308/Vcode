@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 Ultrasonic Sensor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 10%;
+        }
+        h1, h2 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+        p {
+            font-size: 1.5rem;
+            color: #555;
+            border: 2px solid #333; /* Adds a solid border */
+            padding: 10px; /* Adds spacing inside the box */
+            display: inline-block; /* Ensures the box wraps only the text */
+            border-radius: 10px; /* Adds rounded corners to the box */
+            background-color: #f9f9f9; /* Adds a light background color */
+        }
+    </style>
+</head>
+<body>
+    <h1>Ultrasonic Sensor Distance</h1>
+    <p id="distance">Loading distance....</p>
+
+    <h2>Ultrasonic Sensor Temperature</h2>
+    <p id="temperature">Loading Temperature....</p>
+
+    <script>
+        var apiUrl = "http://localhost:8000";
+
+        function updateDistance() {
+            fetch(apiUrl + '/distance.json')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('distance').innerText = `Distance: ${data.distance} cm`;
+                })
+                .catch(err => {
+                    document.getElementById('distance').innerText = 'Error fetching distance';
+                    console.error('Error:', err);
+                });
+        }
+
+        function getTemp() {
+            fetch(apiUrl + "/temperature.json")
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('temperature').innerText = `Temperature: ${data.temperature} °C`;
+                })
+                .catch(err => {
+                    document.getElementById('temperature').innerText = 'Error fetching temperature';
+                    console.error('Error:', err);
+                });
+        }
+
+        setInterval(updateDistance, 1000); // Update distance every second
+        setInterval(getTemp, 1000); // Update temperature every second
+    </script>
+</body>
+</html>

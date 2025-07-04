@@ -64,3 +64,75 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-22 23:39:03.051
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-02-10 19:05:55.060 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\vaibh\OneDrive\Desktop\Vcode\Embedded C course\MyWorkspace\Host
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-10 19:06:01.377
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-10 19:06:01.380
+!MESSAGE Log4j2 initialized with config file C:\Users\vaibh\OneDrive\Desktop\Vcode\Embedded C course\MyWorkspace\Host\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-02-10 19:06:06.629
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-02-10 19:07:38.741
+!MESSAGE Indexed 'Host_AssignmentCode' (0 sources, 0 headers) in 0.002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2025-02-10 19:11:58.497 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-10 19:12:05.079
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-10 19:12:05.082
+!MESSAGE Log4j2 initialized with config file C:\Users\vaibh\OneDrive\Desktop\Vcode\Embedded C course\MyWorkspace\Host\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-02-10 19:12:09.413
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-02-10 19:13:57.987
+!MESSAGE Indexed 'sample' (0 sources, 0 headers) in 0.005 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.equinox.p2.touchpoint.natives 2 0 2025-02-10 19:18:03.439
+!MESSAGE Could not remove temporary backup directory (it is safe to manually delete it and its contents): C:\Users\vaibh\AppData\Local\Temp\STM32CubeIDE_dd3bba25-4a54-420d-8632-ce7899286fee
+!SESSION 2025-02-10 19:18:10.535 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-10 19:18:18.240
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-10 19:18:18.242
+!MESSAGE Log4j2 initialized with config file C:\Users\vaibh\OneDrive\Desktop\Vcode\Embedded C course\MyWorkspace\Host\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-02-10 19:18:22.960
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-02-19 10:00:17.562 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-19 10:00:26.584
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-19 10:00:26.589
+!MESSAGE Log4j2 initialized with config file C:\Users\vaibh\OneDrive\Desktop\Vcode\Embedded C course\MyWorkspace\Host\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-02-19 10:00:37.064
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-02-19 10:03:14.202
+!MESSAGE Indexed 'Sample2' (0 sources, 0 headers) in 0.002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)

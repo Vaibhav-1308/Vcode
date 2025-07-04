@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ESP32 Data Sensors</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin-top: 10%;
+            }
+            h1, h2 {
+                font-size: 2.5rem;
+                color: #333;
+            }
+            p {
+                font-size: 1.5rem;
+                color: #333;
+                border: 2px solid #333;
+                padding: 10px;
+                display: inline-block;
+                background-color: #f9f9f9;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Sensor Distance</h1>
+        <p id="distance">Loading Distance......</p>
+
+        <h2>Sensor Temperature</h2>
+        <p id="temperature">Loading Temperature.......</p>
+
+        <script>
+            var apiUrl = 'http://192.168.4.1'; // Base URL for the ESP32
+
+            function getDistance() {
+                fetch(apiUrl + '/distance') // Fetch data from the /distance endpoint
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Distance Data:', data); // Debugging
+                    // Extract the distance value (it's a string, so convert it to a number if needed)
+                    const distance = parseFloat(data.distance).toFixed(2); // Convert to a number and fix to 2 decimal places
+                    document.getElementById('distance').innerText = `Distance: ${distance} cm`;
+                })
+                .catch(err => {
+                    document.getElementById('distance').innerText = 'Error fetching distance';
+                    console.error('Error:', err);
+                });
+            }
+
+            function getTemp() {
+                fetch(apiUrl + "/temperature") // Fetch data from the /temperature endpoint
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Temperature Data:', data); // Debugging
+                    // Extract the temperature value (assuming it's a string, convert it to a number if needed)
+                    const temperature = parseFloat(data.temperature).toFixed(2); // Convert to a number and fix to 2 decimal places
+                    document.getElementById('temperature').innerText = `Temperature: ${temperature} °C`;
+                })
+                .catch(err => {
+                    document.getElementById('temperature').innerText = 'Error fetching temperature';
+                    console.error('Error:', err);
+                });
+            }
+
+            setInterval(getDistance, 1000); // Update distance every second
+            setInterval(getTemp, 1000); // Update temperature every second
+        </script>
+    </body>
+</html>
